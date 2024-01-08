@@ -28,3 +28,23 @@ header {
     color: var(--colorBranco);
     margin-top: 16px;
 }
+
+.link {
+    display: block;
+    background-color: var(--colorVermelho);
+    color: var(--colorBranco);
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 8px;
+    border: var(--colorBranco) 1px solid;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    background-color: var(--colorBranco);
+    color: var(--colorVermelho);
+    border: 1px solid var(--colorVermelho);
+}
