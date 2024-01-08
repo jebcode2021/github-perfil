@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import style from './ReposList.module.css'
 
 const ReposList = ({ nomeUsuario }) => {
@@ -26,14 +27,14 @@ const ReposList = ({ nomeUsuario }) => {
             ) : (
                 <ul className={style.list}>
                     {repos.map(({ id, name, language, html_url }) => (
-                        <li key={id} className={style.listItem}>
+                        <li className={style.listItem} key={id}>
                             <div className={style.listItemName}>
                                 <b>Nome do repositório: </b> {name}
                             </div>
                             <div className={style.listItemLanguage}>
                                 <b>Linguagem: </b> {language}
                             </div>
-                            <a className={style.listItemLink} target="_blank" href={html_url}>Link do repositório</a>
+                            <a className={style.listItemLink} target="_blank" href={html_url}>Visitar no GitHub</a>
                         </li>
                     ))}
                 </ul>
@@ -42,4 +43,4 @@ const ReposList = ({ nomeUsuario }) => {
     )
 }
 
-export default ReposList
+export default ReposList;

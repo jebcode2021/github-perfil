@@ -1,12 +1,10 @@
 import style from  './Perfil.module.css';
 
-const Perfil = ({ nomeUsuario, avatar }) => {
-
-    avatar = `https://github.com/${nomeUsuario}.png`;
+const Perfil = ({ nomeUsuario }) => {
 
     return (
         <header className={style.header}>
-            <img className={style.avatar} src={avatar} alt={nomeUsuario} />
+        <img className={style.avatar} src={`https://github.com/${nomeUsuario}.png`} />
             <h1 className={style.name}>{nomeUsuario}</h1>
         </header>
     )
