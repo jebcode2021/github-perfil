@@ -1,4 +1,4 @@
-.list { 
+.list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
@@ -6,14 +6,28 @@
 }
 
 .listItem {
-list-style: none;
-padding: 16px;
-border: 1px solid var(--colorCinza);
-border-radius: 4px;
+    list-style: none;
+    padding: 16px;
+    border: 1px solid var(--colorCinza);
+    border-radius: 4px;
 }
 
-.listItemName b, .listItemLanguage b {
-    margin-right: 8px;
+.listItemID {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.listItemName b {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.listItemLanguage {
+    margin-top: 8px;
+}
+
+.listItemLanguage b {
+    margin-top: 8px;
 }
 
 .listItemLink {

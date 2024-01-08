@@ -6,6 +6,7 @@ const ReposList = ({ nomeUsuario }) => {
     const [repos, setRepos] = useState([]);
     const [estaCarregando, setEstaCarregando] = useState(true);
     const [erro, setErro] = useState(false);
+    let [contador, setContador] = useState(1);
 
     useEffect(() => {
         setEstaCarregando(true);
@@ -45,9 +46,17 @@ const ReposList = ({ nomeUsuario }) => {
                         <h1>Carregando...</h1>
                     </div>
                 ) : (
+                    <div className="container">
+                        <h1 className="container_description">Repositórios públicos: {repos.length}</h1>
                     <ul className={style.list}>
                         {repos.map(({ id, name, language, html_url }) => (
                             <li className={style.listItem} key={id}>
+                                <div className={style.listItemID}>
+                                    <b>Contador de repositórios: </b> {contador++}
+                                    <br />
+                                    <br />
+                                    <b>ID: </b>  {id}
+                                </div>
                                 <div className={style.listItemName}>
                                     <b>Nome do repositório: </b> {name}
                                 </div>
@@ -58,6 +67,7 @@ const ReposList = ({ nomeUsuario }) => {
                             </li>
                         ))}
                     </ul>
+                    </div>
                 )}
             </div>
         )
