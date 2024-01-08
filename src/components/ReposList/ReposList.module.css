@@ -1,0 +1,47 @@
+.list { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.listItem {
+list-style: none;
+padding: 16px;
+border: 1px solid var(--colorCinza);
+border-radius: 4px;
+}
+
+.listItemName b, .listItemLanguage b {
+    margin-right: 8px;
+}
+
+.listItemLink {
+    display: block;
+    background-color: var(--colorVermelho);
+    color: var(--colorBranco);
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 8px;
+    border: var(--colorBranco) 1px solid;
+}
+
+.listItemLink:hover {
+    background-color: var(--colorBranco);
+    color: var(--colorVermelho);
+    border: 1px solid var(--colorVermelho);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loading h1 {
+    font-size: 20px;
+    color: var(--colorVermelho);
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+:root {
+    --colorVermelho: #860813;
+    --colorBranco: #fff;
+    --colorCinza: #ccc;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--colorVermelho);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--colorCinza);
+}
+
+form input:focus {
+    border: 1px solid var(--colorVermelho);
+}
+
+form label {
+    font-size: 14px;
+    color: var(--colorBranco);
+    font-weight: bold;
+}
+
