@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+.container h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
 :root {
     --colorVermelho: #860813;
     --colorBranco: #fff;
