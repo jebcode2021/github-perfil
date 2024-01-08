@@ -3,7 +3,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 180px 0 40px;
+    padding: 50px 0 40px;
     margin-bottom: 80px;
 }
 
@@ -11,7 +11,16 @@ header {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 2px solid var(--colorBranco);
+    border: 2px solid var(--colorBranco); 
+    background: var(--colorBranco);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    
 }
 
 .name {

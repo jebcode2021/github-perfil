@@ -12,7 +12,7 @@ function App() {
       <form>
         <div className="container">
           <label htmlFor="nomeUsuario">Nome do usuário: </label>
-          <input type="text" onBlur={(evento) => setNomeUsuario(evento.target.value)} placeholder="Digite o nome do usuário" />
+          <input type="text" onBlur={(evento) => setNomeUsuario(evento.target.value)} placeholder="Pesquise um usuário" />
         </div>
       </form>
 
